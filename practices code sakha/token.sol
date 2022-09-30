@@ -31,9 +31,9 @@ contract StepUpToken {
     //burn -> 0x00 / 
     //update-> totalNumofToken
     function burn(uint256_value)public returns(bool success){
-        require(balanceof[msg.sender]>=_value);
-        balanceof[msg.sender]-=_value;
-        totaltoken-=_value;
+        require(balances[msg.sender]>=_value);
+        balances[msg.sender]-=_value;
+       
     }
     
     //update token
